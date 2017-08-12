@@ -1,5 +1,7 @@
 const Gpio = require("onoff").Gpio;
-const io = require('socket.io')(8080);
+const io = require('socket.io')(8080, {
+path: '/interface'
+});
 
 const createButton = function (pin) {
 
